@@ -41,9 +41,9 @@ public class Finalasse {
            driver.findElement(By.xpath("//div[text()='New']")).click();
            
            
-           WebElement val = driver.findElement(By.xpath("//input[@name='Name']"));
-           val.sendKeys("Salesforce - Praveen BS");
-           String typed = val.getAttribute("value");
+           WebElement username = driver.findElement(By.xpath("//input[@name='Name']"));
+           username.sendKeys("Salesforce - Praveen BS");
+           String typed = username.getAttribute("value");
            System.out.println(typed);
            driver.findElement(By.xpath("//input[@name='CloseDate']")).sendKeys("8/03/2022");
            driver.findElement(By.xpath("//div[@role='none']/button")).click();
